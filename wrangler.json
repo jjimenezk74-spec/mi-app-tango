@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "019cd866-e696-79f9-8220-77e14d60e23c",
   "main": "./src/worker/index.ts",
-  "compatibility_date": "2025-06-17",
+  "compatibility_date": "2026-03-11",
   "compatibility_flags": ["nodejs_compat"],
   "observability": {
     "enabled": true
