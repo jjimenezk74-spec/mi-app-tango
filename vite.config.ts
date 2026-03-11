@@ -11,6 +11,7 @@ export default defineConfig({
     cloudflare({
       viteWorker: {
         entrypoint: "./src/worker/index.ts",
+        configPath: "./wrangler.json"
       }
     }),
   ],
@@ -19,7 +20,7 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 5000,
-    outDir: "dist",
+    outDir: "dist/client",
   },
   resolve: {
     alias: {
