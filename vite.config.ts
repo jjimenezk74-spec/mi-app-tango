@@ -19,8 +19,8 @@ export default defineConfig({
     allowedHosts: true,
   },
   build: {
-    chunkSizeWarningLimit: 5000,
-    outDir: "dist/client",
+    outDir: 'dist',
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
