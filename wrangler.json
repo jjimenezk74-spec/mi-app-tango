@@ -1,9 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "019cd866-e696-79f9-8220-77e14d60e23c",
+  "name": "mi-app-tango",
   "main": "./src/worker/index.ts",
   "compatibility_date": "2026-03-11",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "observability": {
     "enabled": true
   },
@@ -12,26 +14,26 @@
     "not_found_handling": "single-page-application"
   },
   "d1_databases": [
-  {
-    "binding": "DB",
-    "database_name": "tango-db",
-    "database_id": "019cd866-e696-79f9-8220-77e14d60e23c"
-  }
-]
-	  "r2_buckets": [
-	    {
-	      "binding": "R2_BUCKET",
-	      "bucket_name": "019cd866-e696-79f9-8220-77e14d60e23c"
-	    }
-	  ],
-	  "services": [
-	    {
-	      "binding": "EMAILS",
-	      "service": "emails-service",
-	      "entrypoint": "EmailService",
-	      "props": {
-	        "appId": "019cd866-e696-79f9-8220-77e14d60e23c"
-	      }
-	    }
-	  ]
-	}
+    {
+      "binding": "DB",
+      "database_name": "tango-db",
+      "database_id": "019cd866-e696-79f9-8220-77e14d60e23c"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "019cd866-e696-79f9-8220-77e14d60e23c"
+    }
+  ],
+  "services": [
+    {
+      "binding": "EMAILS",
+      "service": "emails-service",
+      "entrypoint": "EmailService",
+      "props": {
+        "appId": "019cd866-e696-79f9-8220-77e14d60e23c"
+      }
+    }
+  ]
+}
