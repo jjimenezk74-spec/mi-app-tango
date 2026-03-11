@@ -12,12 +12,12 @@
     "not_found_handling": "single-page-application"
   },
   "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "019cd866-e696-79f9-8220-77e14d60e23c",
-      "database_id": "019cd866-e696-79f9-8220-77e14d60e23c"
-    }
-  ],
+  {
+    "binding": "DB",
+    "database_name": "tango-db",
+    "database_id": "019cd866-e696-79f9-8220-77e14d60e23c"
+  }
+]
 	  "r2_buckets": [
 	    {
 	      "binding": "R2_BUCKET",
