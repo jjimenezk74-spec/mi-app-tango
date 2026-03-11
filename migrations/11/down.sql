@@ -1,0 +1,1 @@
+ALTER TABLE cash_movements DROP COLUMN invoice_number;

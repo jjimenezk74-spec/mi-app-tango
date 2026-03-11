@@ -1,0 +1,11 @@
+
+DELETE FROM products WHERE sku IN (
+  'YM001', 'YM002', 'YM003', 'YM004',
+  'TM001', 'TM002', 'TM003',
+  'GP001', 'GP002', 'GP003',
+  'HI001', 'HI002',
+  'BE001', 'BE002', 'BE003', 'BE004', 'BE005',
+  'LA001', 'LA002', 'LA003',
+  'SN001', 'SN002', 'SN003', 'SN004',
+  'AC001', 'AC002', 'AC003', 'AC004'
+);

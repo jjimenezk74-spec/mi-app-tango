@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Yerba Mate Green + Wood + Gold Theme */
+    --background: 40 20% 97%;
+    --foreground: 30 10% 12%;
+    --card: 40 25% 99%;
+    --card-foreground: 30 10% 12%;
+    --popover: 40 25% 99%;
+    --popover-foreground: 30 10% 12%;
+    --primary: 142 40% 35%;
+    --primary-foreground: 40 20% 98%;
+    --secondary: 32 25% 90%;
+    --secondary-foreground: 30 10% 15%;
+    --muted: 35 15% 92%;
+    --muted-foreground: 30 8% 45%;
+    --accent: 43 74% 49%;
+    --accent-foreground: 30 10% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 32 20% 85%;
+    --input: 32 20% 88%;
+    --ring: 142 40% 35%;
+    --radius: 0.5rem;
+    --chart-1: 142 40% 45%;
+    --chart-2: 142 35% 55%;
+    --chart-3: 43 74% 49%;
+    --chart-4: 32 40% 45%;
+    --chart-5: 142 30% 65%;
+    --sidebar: 30 15% 15%;
+    --sidebar-foreground: 40 15% 92%;
+    --sidebar-primary: 142 40% 45%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 30 12% 22%;
+    --sidebar-accent-foreground: 40 15% 92%;
+    --sidebar-border: 30 10% 25%;
+    --sidebar-ring: 142 40% 45%;
+    /* Custom colors */
+    --yerba: 142 40% 35%;
+    --wood: 32 40% 35%;
+    --gold: 43 74% 49%;
+  }
+
+  .dark {
+    --background: 30 15% 8%;
+    --foreground: 40 15% 95%;
+    --card: 30 12% 12%;
+    --card-foreground: 40 15% 95%;
+    --popover: 30 12% 12%;
+    --popover-foreground: 40 15% 95%;
+    --primary: 142 45% 42%;
+    --primary-foreground: 40 20% 98%;
+    --secondary: 30 12% 18%;
+    --secondary-foreground: 40 15% 90%;
+    --muted: 30 10% 18%;
+    --muted-foreground: 35 10% 55%;
+    --accent: 43 70% 50%;
+    --accent-foreground: 30 10% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 10% 20%;
+    --input: 30 10% 22%;
+    --ring: 142 45% 42%;
+    --chart-1: 142 45% 50%;
+    --chart-2: 142 40% 60%;
+    --chart-3: 43 70% 55%;
+    --chart-4: 32 35% 50%;
+    --chart-5: 142 35% 70%;
+    --sidebar: 30 15% 6%;
+    --sidebar-foreground: 40 15% 92%;
+    --sidebar-primary: 142 45% 45%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 30 12% 14%;
+    --sidebar-accent-foreground: 40 15% 92%;
+    --sidebar-border: 30 10% 15%;
+    --sidebar-ring: 142 45% 45%;
+    --yerba: 142 45% 42%;
+    --wood: 32 35% 40%;
+    --gold: 43 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "DM Sans", "Inter Variable", "Inter", system-ui, sans-serif;
+  }
+
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+
+  .font-display {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+/* Print styles removed - using popup window approach instead */
