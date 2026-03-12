@@ -39,12 +39,12 @@
     "wrangler": "^4.33.0",
     "knip": "^5.51.0"
   },
-  "scripts": {
-    "build": "vite build && mv dist/assets/index-*.js dist/_worker.js",
-    "cf-typegen": "wrangler types",
-    "check": "tsc && vite build && wrangler deploy --dry-run",
-    "dev": "vite",
-    "knip": "knip",
-    "lint": "eslint ."
+ "scripts": {
+  "build": "vite build && cp dist/server/index.js dist/_worker.js",
+  "cf-typegen": "wrangler types",
+  "check": "tsc && vite build && wrangler deploy --dry-run",
+  "dev": "vite",
+  "knip": "knip",
+  "lint": "eslint ."
   }
 }
