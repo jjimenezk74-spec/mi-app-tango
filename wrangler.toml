@@ -4,6 +4,6 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
 [[d1_databases]]
-binding = "DB" # O "DATABASE", pon el que configuramos en el panel
+binding = "DB"
 database_name = "tango-db"
-database_id = "TU_ID_DE_BASE_DE_DATOS_AQUI" # Lo encuentras en el panel de D1
+database_id = "TU_ID_DE_BASE_DE_DATOS_AQUI"
