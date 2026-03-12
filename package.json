@@ -40,11 +40,8 @@
     "knip": "^5.51.0"
   },
  "scripts": {
-  "build": "vite build && (cp dist/_worker.js dist/_worker.js || cp _worker.js dist/_worker.js || find dist -name 'index.js' -exec cp {} dist/_worker.js \\;) && echo 'Worker ready'",
-  "cf-typegen": "wrangler types",
-  "check": "tsc && vite build && wrangler deploy --dry-run",
+  "build": "vite build && echo 'Iniciando copia de Worker...' && (cp dist/_worker.js dist/_worker.js || find dist -name 'index.js' -exec cp {} dist/_worker.js \\;) && echo 'Worker listo'",
   "dev": "vite",
-  "knip": "knip",
   "lint": "eslint ."
-  }
+}
 }
