@@ -6,4 +6,4 @@ pages_build_output_dir = "dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "tango-db"
-database_id = "TU_ID_DE_BASE_DE_DATOS_AQUI"
+database_id = "a2a1375f7071219c42bd085c1fc7cc01"
