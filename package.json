@@ -40,11 +40,11 @@
     "knip": "^5.51.0"
   },
   "scripts": {
-    "build": "vite build",
-    "cf-typegen": "wrangler types",
-    "check": "tsc && vite build && wrangler deploy --dry-run",
-    "dev": "vite",
-    "knip": "knip",
-    "lint": "eslint ."
-  }
+  "build": "vite build && cp dist/mi_app_tango/index.js dist/_worker.js",
+  "cf-typegen": "wrangler types",
+  "check": "tsc && vite build && wrangler deploy --dry-run",
+  "dev": "vite",
+  "knip": "knip",
+  "lint": "eslint ."
+}
 }
