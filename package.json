@@ -40,7 +40,7 @@
     "knip": "^5.51.0"
   },
   "scripts": {
-  "build": "vite build && cp dist/mi_app_tango/index.js dist/_worker.js",
+  "build": "vite build && find dist -name \"*.js\" -exec cp {} dist/_worker.js \\; -quit",
   "cf-typegen": "wrangler types",
   "check": "tsc && vite build && wrangler deploy --dry-run",
   "dev": "vite",
