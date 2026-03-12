@@ -39,8 +39,8 @@
     "wrangler": "^4.33.0",
     "knip": "^5.51.0"
   },
- "scripts": {
-  "build": "vite build && echo 'Iniciando copia de Worker...' && (cp dist/_worker.js dist/_worker.js || find dist -name 'index.js' -exec cp {} dist/_worker.js \\;) && echo 'Worker listo'",
+"scripts": {
+  "build": "vite build && echo 'Buscando servidor...' && find . -name '_worker.js' -exec cp {} dist/_worker.js \; && find . -name 'server.js' -exec cp {} dist/_worker.js \; && echo 'Copiado finalizado'",
   "dev": "vite",
   "lint": "eslint ."
 }
