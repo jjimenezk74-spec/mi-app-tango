@@ -1,0 +1,9 @@
+name = "mi-app-tango"
+compatibility_date = "2024-03-12"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB" # O "DATABASE", pon el que configuramos en el panel
+database_name = "tango-db"
+database_id = "TU_ID_DE_BASE_DE_DATOS_AQUI" # Lo encuentras en el panel de D1
