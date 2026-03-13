@@ -1,7 +1,7 @@
 name = "mi-app-tango"
 compatibility_date = "2024-03-12"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "dist"
+pages_build_output_dir = "./dist"
 
 [[d1_databases]]
 binding = "DATABASE"
